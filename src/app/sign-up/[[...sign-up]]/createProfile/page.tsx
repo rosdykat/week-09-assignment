@@ -2,6 +2,13 @@
 // clerkId does not exist unti lthe user signs up
 
 export default function CreateProfilePage() {
+  // When you are handling the submit, you will store the users data into the users tabl;e
+  // as part of this insert, make sure you also add clerkId from auth()
+
+  //   if (!userId){
+  //     // prompt the user to sign up
+  //   }
+
   return (
     <>
       <h1>Welcome! Sign up here</h1>

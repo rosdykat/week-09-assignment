@@ -1,9 +1,12 @@
-import { SignIn } from "@clerk/nextjs";
+//I am going to use the SignIn component from clerk
 
+import { SignIn } from "@clerk/nextjs";
 export default function SignInPage() {
   return (
     <>
-      <h1>This is the sign in page!</h1>
+      {/* You can customise this page further */}
+      <h1>Welcome to Basics!</h1>
+      <h2>Sign in, please!</h2>
       <SignIn />
     </>
   );

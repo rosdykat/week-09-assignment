@@ -37,7 +37,7 @@ export default async function AvatarUpdate() {
     revalidatePath(`/user/${userId}`);
 
     if (userId) {
-      redirect(`/user/${userId}`);
+      redirect(`/allusers`);
     }
   }
 

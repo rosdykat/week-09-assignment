@@ -6,8 +6,10 @@ export default async function UserProfilePage() {
   // const { userId } = await auth();
   return (
     <>
-      <h1>User profile page</h1>
-      <SignInForm />
+      <h1>Please enter your username!</h1>
+      <div>
+        <SignInForm />
+      </div>
       {/* This is the userId value that clerk assigns to a user when they sign up */}
       {/* we can store this value in a database to relate it to posts, comments... */}
       {/* <p>{userId}</p> */}

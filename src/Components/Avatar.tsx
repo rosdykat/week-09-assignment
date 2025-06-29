@@ -20,10 +20,10 @@ export default async function AvatarComponent() {
     return (
       <>
         <div className={style.avatarBox}>
-          <div className={`test ${style.status}`}>
+          <div className={`status ${style.status}`}>
             <AvatarUpdate />
           </div>
-          <div className={`test ${style.avatar}`}>
+          <div className={`avatar ${style.avatar}`}>
             <h1>{userName}</h1>
           </div>
           {/* {userId.map((login) => {

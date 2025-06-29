@@ -7,6 +7,10 @@
 .status {
   padding: 2rem;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .avatarBox {
@@ -14,4 +18,20 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.allUsers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+}
+.allUsersBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
 }

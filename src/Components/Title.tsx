@@ -11,7 +11,9 @@ export default async function Title() {
   return (
     <>
       <div className={style.header}>
-        <h1>Social Media</h1>
+        <Link href="/" className="font-bold">
+          mood.
+        </Link>
         <div>
           <SignedIn>
             <Link href={`/user/${userId}`}>Update Status</Link>

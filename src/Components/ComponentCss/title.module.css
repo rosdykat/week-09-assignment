@@ -10,8 +10,15 @@
   width: 100%;
   border: 1px solid black;
   height: 10vh;
+  background-color: white;
 }
 
 .menu {
   width: 5rem;
+}
+
+@media screen and (max-width: 900px) {
+  .header {
+    font-size: 12px;
+  }
 }

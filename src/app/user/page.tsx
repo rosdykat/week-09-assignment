@@ -5,7 +5,7 @@ export default async function UserProfilePage() {
   //we have destructured (extracted) the userId value from auth
   // const { userId } = await auth();
   return (
-    <>
+    <div className="backgroundBox">
       <h1>Please enter your username!</h1>
       <div>
         <SignInForm />
@@ -13,6 +13,6 @@ export default async function UserProfilePage() {
       {/* This is the userId value that clerk assigns to a user when they sign up */}
       {/* we can store this value in a database to relate it to posts, comments... */}
       {/* <p>{userId}</p> */}
-    </>
+    </div>
   );
 }

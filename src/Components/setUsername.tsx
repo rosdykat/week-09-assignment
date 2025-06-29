@@ -28,7 +28,6 @@ export default async function SignInForm() {
     <div>
       <form action={handleSubmit}>
         <fieldset>
-          <legend>Login</legend>
           <div className="FormContent">
             <label htmlFor="username">Username:</label>
             <input

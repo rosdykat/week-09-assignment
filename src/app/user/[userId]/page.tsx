@@ -11,7 +11,6 @@ export default async function UserProfilePage() {
   console.log({ userId });
   return (
     <>
-      <h1>User profile page</h1>
       <AvatarComponent />
     </>
   );

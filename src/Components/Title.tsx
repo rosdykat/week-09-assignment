@@ -1,24 +1,28 @@
 import style from "@/Components/ComponentCss/title.module.css";
 import Menu from "./Menu";
-import Logins from "./Logins";
+import SignIn from "@/Components/SignIn";
+import SignUp from "@/Components/SignUp";
 import Link from "next/link";
 import { auth } from "@clerk/nextjs/server";
+import { SignedIn } from "@clerk/nextjs";
 
 export default async function Title() {
   const { userId } = await auth();
   return (
     <>
       <div className={style.header}>
-        <div className={`test ${style.title}`}>
-          <h1>Social Media</h1>
-          <div>
-            <Link href={`/user/${userId}`}>Profile</Link>
-          </div>
+        <h1>Social Media</h1>
+        <div>
+          <SignedIn>
+            <Link href={`/user/${userId}`}>Update Status</Link>
+          </SignedIn>
         </div>
-        <Logins />
-        <div className={`test ${style.menu}`}>
-          <Menu />
+        <div>
+          <Link href="/allusers">All Users</Link>
         </div>
+        <SignIn />
+        <SignUp />
+        <Menu />
       </div>
     </>
   );

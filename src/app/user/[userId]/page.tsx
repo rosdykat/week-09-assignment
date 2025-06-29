@@ -10,8 +10,8 @@ export default async function UserProfilePage() {
   const { userId } = await auth();
   console.log({ userId });
   return (
-    <>
+    <div className="backgroundBox">
       <AvatarComponent />
-    </>
+    </div>
   );
 }

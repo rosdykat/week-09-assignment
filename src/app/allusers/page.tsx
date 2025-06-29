@@ -8,7 +8,7 @@ export default async function AllUsers() {
   //   const userStatus = allUsers.rows[0]?.status ?? "";
 
   return (
-    <div className={style.allUsersBox}>
+    <div className={`backgroundBox ${style.allUsersBox}`}>
       {allUsers.rows.map((user, index) => (
         <div key={index} className={style.allUsers}>
           <p className={`status ${style.status}`}>{user.status}</p>
